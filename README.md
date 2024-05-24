@@ -41,8 +41,8 @@ EMAIL_PASSWORD = "your-email-application-password"
 RECEIVER_EMAIL = "your-receiver-email-address"
 ```
 
-## Usage Example
-Please be ware that you must pass the name of the Aviatrix Transit Gateway when executing the script.
+## Usage Examples
+Please be aware that you must provide the name of the Aviatrix Transit Gateway when executing the script.
 Example:
 ```
 $ python3 route_approval_check.py transit-70
