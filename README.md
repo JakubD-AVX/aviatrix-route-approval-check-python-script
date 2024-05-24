@@ -62,6 +62,24 @@ In case the number of CIDRs (either approved or pending) between today and yeste
 Once the script is executed for the first time you do not have any files generated a day before.
 Therefore script cannot compare the data gathered today against the data from yesterday.
 However, the script will still generate the files for today.
+```
+$ python3 route_approval_check.py  transit-80
+------------------------------------------------------------------------------------------------------------------------
+The Transit Gateway 'transit-80' is present / exists.
+------------------------------------------------------------------------------------------------------------------------
+File transit-80_connection_t80-t90_approved_cidr_list_date_2024-05-24.csv has been created
+File transit-80_connection_t80-t90_total_approved_cidr_date_2024-05-24.csv has been created
+File transit-80_connection_t80-t90_pending_cidr_list_date_2024-05-24.csv has been created
+File transit-80_connection_t80-t90_total_pending_cidr_date_2024-05-24.csv has been created
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  t80-t90
+The number of approved CIDRs in the CSV file for TODAY: 1
+File from yesterday files/transit-80_connection_t80-t90_total_approved_cidr_date_2024-05-23.csv for approved CIDRs does not exist.
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  t80-t90
+The number of pending CIDRs in the CSV file for TODAY: 2
+File from yesterday files/transit-80_connection_t80-t90_total_pending_cidr_date_2024-05-23.csv for pending CIDRs does not exist.
+```
 ### Executing the script for the second+ time
 Example of the output of executing the script for the existing Transit Gateway (in case the data/files for yesterday exist):
 ```
