@@ -50,5 +50,91 @@ python3 route_approval_check.py transit-70
 The *transit-70* is a name of my Transit Gateway.
 
 ## Output
-
-## E-mail notifications
+Beside the files that are created by the script, the script also generates some outputs and sends notification e-mails.
+The script generates the outputs that show the follwoing pieces of information:
+- name of the Aviatrix Transit Gateway that has been checked
+- name of the connection
+- for each connection: number of approved CIDRs for today and yesterday
+- for each connection: number of pending CIDRs for today and yesterday
+In case the number of CIDRs (either approved or pending) between today and yesterday is not equal -> script sends a notification e-mail(s).
+### Executing the script for the first time
+Once the script is executed for the first time you do not have any files generated a day before.
+Therefore script cannot compare the data gathered today against the data from yesterday.
+However, the script will still generate the files for today.
+### Executing the script
+Example of the output of executing the script for the existing Transit Gateway:
+'''
+python3 route_approval_check.py  transit-90
+------------------------------------------------------------------------------------------------------------------------
+The Transit Gateway 'transit-90' is present / exists.
+------------------------------------------------------------------------------------------------------------------------
+File transit-90_connection_t90-t80_approved_cidr_list_date_2024-05-24.csv has been created
+File transit-90_connection_t90-t80_total_approved_cidr_date_2024-05-24.csv has been created
+File transit-90_connection_t90-t80_pending_cidr_list_date_2024-05-24.csv has been created
+File transit-90_connection_t90-t80_total_pending_cidr_date_2024-05-24.csv has been created
+File transit-90_connection_fake_approved_cidr_list_date_2024-05-24.csv has been created
+File transit-90_connection_fake_total_approved_cidr_date_2024-05-24.csv has been created
+File transit-90_connection_fake_pending_cidr_list_date_2024-05-24.csv has been created
+File transit-90_connection_fake_total_pending_cidr_date_2024-05-24.csv has been created
+File transit-90_connection_fake2_approved_cidr_list_date_2024-05-24.csv has been created
+File transit-90_connection_fake2_total_approved_cidr_date_2024-05-24.csv has been created
+File transit-90_connection_fake2_pending_cidr_list_date_2024-05-24.csv has been created
+File transit-90_connection_fake2_total_pending_cidr_date_2024-05-24.csv has been created
+File transit-90_connection_tr90-tr70_approved_cidr_list_date_2024-05-24.csv has been created
+File transit-90_connection_tr90-tr70_total_approved_cidr_date_2024-05-24.csv has been created
+File transit-90_connection_tr90-tr70_pending_cidr_list_date_2024-05-24.csv has been created
+File transit-90_connection_tr90-tr70_total_pending_cidr_date_2024-05-24.csv has been created
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  t90-t80
+The number of approved CIDRs in the CSV file for TODAY: 1
+The number of approved CIDRs in the CSV file for YESTERDAY: 2
+Total approved CIDR number is lower than yesterday for connection:  t90-t80
+Email sent successfully!
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  fake
+The number of approved CIDRs in the CSV file for TODAY: 1
+The number of approved CIDRs in the CSV file for YESTERDAY: 1
+Total approved CIDR number has not changed for connection:  fake
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  fake2
+The number of approved CIDRs in the CSV file for TODAY: 1
+The number of approved CIDRs in the CSV file for YESTERDAY: 1
+Total approved CIDR number has not changed for connection:  fake2
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  tr90-tr70
+The number of approved CIDRs in the CSV file for TODAY: 3
+The number of approved CIDRs in the CSV file for YESTERDAY: 1
+Total approved CIDR number is greater than yesterday for connection:  tr90-tr70
+Email sent successfully!
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  t90-t80
+The number of pending CIDRs in the CSV file for TODAY: 2
+The number of pending CIDRs in the CSV file for YESTERDAY: 1
+Total pending CIDR number is greater than yesterday for connection:  t90-t80
+Email sent successfully!
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  fake
+The number of pending CIDRs in the CSV file for TODAY: 0
+The number of pending CIDRs in the CSV file for YESTERDAY: 0
+Total pending CIDR number has not changed for connection:  fake
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  fake2
+The number of pending CIDRs in the CSV file for TODAY: 0
+The number of pending CIDRs in the CSV file for YESTERDAY: 0
+Total pending CIDR number has not changed for connection:  fake2
+------------------------------------------------------------------------------------------------------------------------
+Connection name:  tr90-tr70
+The number of pending CIDRs in the CSV file for TODAY: 0
+The number of pending CIDRs in the CSV file for YESTERDAY: 2
+Total pending CIDR number is lower than yesterday for connection:  tr90-tr70
+Email sent successfully!
+'''
+### Executing the script for not existing Transit Gateway
+Example of the output of executing the script for the non-existing Transit Gateway:
+'''
+python3 route_approval_check.py  transit-1234
+------------------------------------------------------------------------------------------------------------------------
+The Transit Gateway 'transit-1234' is not present / does not exist.
+------------------------------------------------------------------------------------------------------------------------
+'''
+### E-mail notifications
