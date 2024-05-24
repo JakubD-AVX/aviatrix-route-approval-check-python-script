@@ -26,12 +26,11 @@ By default, script generates and keeps these files in "/files/" folder.
 The script uses .env file for keeping the information required to log in to the Aviatrix Controller and to send the email notifications.
 The following variables must be updated by you before executing the script.
 The content of .env file:
-'''# Aviatrix Controller
+'''
 CONTROLLER_IP = "IP-of-your-Aviatrix-Controller"
 CONTROLLER_USER = "your-Aviatrix-Controller-Username"
 CONTROLLER_PASSWORD = "your-Aviatrix-Controller-Username-Password"
 
-# Email details
 SENDER_EMAIL = "your-sender-email-address"
 EMAIL_PASSWORD = "your-email-application-password"
 RECEIVER_EMAIL = "your-receiver-email-address"'''
