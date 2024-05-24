@@ -62,7 +62,7 @@ In case the number of CIDRs (either approved or pending) between today and yeste
 Once the script is executed for the first time you do not have any files generated a day before.
 Therefore script cannot compare the data gathered today against the data from yesterday.
 However, the script will still generate the files for today.
-### Executing the script
+### Executing the script for the second+ time
 Example of the output of executing the script for the existing Transit Gateway:
 ```
 $ python3 route_approval_check.py  transit-90
