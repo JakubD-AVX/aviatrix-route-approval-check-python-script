@@ -13,7 +13,7 @@ c) there are new pending CIDRs,
 d) some pending CIDRs have been removed.
 
 The script can be scheduled to be run every day. During the script execution the following files are created for each BGP connection:
-- *transit-gw-name*_connection_*connection-name*_approved_cidr_list_date_*yyyy-mm-dd*.csv
+- *transit-gw-name*__connection_*connection-name*_approved_cidr_list_date_*yyyy-mm-dd*.csv
   The purpose of the file is to keep a list of all approved CIDRs.
 - *transit-gw-name*_connection_*connection-name*_pending_cidr_list_date_*yyyy-mm-dd*.csv
   The purpose of the file is to keep a list of all pending CIDRs.
@@ -30,10 +30,12 @@ The following variables must be updated by you before executing the script.
 The content of .env file:
 
 ```
+# Aviatrix Controller
 CONTROLLER_IP = "IP-of-your-Aviatrix-Controller"
 CONTROLLER_USER = "your-Aviatrix-Controller-Username"
 CONTROLLER_PASSWORD = "your-Aviatrix-Controller-Username-Password"
 
+# Email details
 SENDER_EMAIL = "your-sender-email-address"
 EMAIL_PASSWORD = "your-email-application-password"
 RECEIVER_EMAIL = "your-receiver-email-address"
@@ -46,3 +48,7 @@ Example:
 python3 route_approval_check.py transit-70
 ```
 The *transit-70* is a name of my Transit Gateway.
+
+## Output
+
+## E-mail notifications
