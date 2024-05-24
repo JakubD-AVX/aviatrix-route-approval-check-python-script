@@ -7,10 +7,10 @@ The Route Approval feature maintains two lists of CIDRs: "Approved CIDR" list an
 
 The purpose of the script is to validate whether the "Approved CIDR" list and the "Pending CIDR" list changed between today and tomorrow. 
 The knowledge about whether those lists changed could be crucial if someone wants to monitor whether: 
-a) there are new CIDRs that have been approved, 
-b) there are some previously approved CIDRs that have been removed, 
-c) there are new pending CIDRs, 
-d) some pending CIDRs have been removed.
+- there are new CIDRs that have been approved, 
+- there are some previously approved CIDRs that have been removed, 
+- there are new pending CIDRs, 
+- some pending CIDRs have been removed.
 
 The script can be scheduled to be run every day. During the script execution the following files are created for each BGP connection:
 - transit-gw-name_connection_connection-name_approved_cidr_list_date_yyyy-mm-dd.csv
