@@ -51,7 +51,7 @@ The *transit-70* is a name of my Transit Gateway.
 
 ## Output
 Besides the files that are created by the script, the script also generates some outputs and sends notification e-mails.
-The script generates the outputs that show the follwoing pieces of information:
+The script generates the outputs that show the following pieces of information:
 - name of the Aviatrix Transit Gateway that has been checked
 - name of the connection
 - for each connection: number of approved CIDRs for today and yesterday
