@@ -9,7 +9,7 @@ The purpose of the script is to validate whether the "Approved CIDR" list and th
 The knowledge about whether those lists changed could be crucial if someone wants to monitor whether: 
 - there are new CIDRs that have been approved, 
 - there are some previously approved CIDRs that have been removed, 
-- there are new pending CIDRs, 
+- there are new pending CIDRs advertised from BGP Peer, 
 - some pending CIDRs have been removed.
 
 The script can be scheduled to be run every day. During the script execution the following files are created for each BGP connection:
