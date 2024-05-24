@@ -26,18 +26,18 @@ By default, script generates and keeps these files in "/files/" folder.
 The script uses .env file for keeping the information required to log in to the Aviatrix Controller and to send the email notifications.
 The following variables must be updated by you before executing the script.
 The content of .env file:
-'''
+```
 CONTROLLER_IP = "IP-of-your-Aviatrix-Controller"
 CONTROLLER_USER = "your-Aviatrix-Controller-Username"
 CONTROLLER_PASSWORD = "your-Aviatrix-Controller-Username-Password"
 
 SENDER_EMAIL = "your-sender-email-address"
 EMAIL_PASSWORD = "your-email-application-password"
-RECEIVER_EMAIL = "your-receiver-email-address"'''
+RECEIVER_EMAIL = "your-receiver-email-address"```
 
 Please keep in mind that scrip only works for **Aviatrix Transit Gateways** that have "BGP Route Approval" feature enabled in **Connection-Mode**.
 ## Usage Example
 Please be ware that you must pass the name of the Aviatrix Transit Gateway when executing the script.
 Example:
-'''python3 route_approval_check.py  *transit-70*'''
+```python3 route_approval_check.py  *transit-70*```
 The transit-70 is a name of my Transit Gateway.
