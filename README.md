@@ -63,7 +63,7 @@ Once the script is executed for the first time you do not have any files generat
 Therefore script cannot compare the data gathered today against the data from yesterday.
 However, the script will still generate the files for today.
 ### Executing the script for the second+ time
-Example of the output of executing the script for the existing Transit Gateway:
+Example of the output of executing the script for the existing Transit Gateway (in case the data/files for yesterday exist):
 ```
 $ python3 route_approval_check.py  transit-90
 ------------------------------------------------------------------------------------------------------------------------
