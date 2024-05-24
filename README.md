@@ -13,13 +13,13 @@ c) there are new pending CIDRs,
 d) some pending CIDRs have been removed.
 
 The script can be scheduled to be run every day. During the script execution the following files are created for each BGP connection:
-- *transit-gw-name*__connection_*connection-name*__approved_cidr_list_date_*yyyy-mm-dd*.csv
+- transit-gw-name_connection_connection-name_approved_cidr_list_date_yyyy-mm-dd.csv
   The purpose of the file is to keep a list of all approved CIDRs.
-- *transit-gw-name*__connection_*connection-name*_pending_cidr_list_date_*yyyy-mm-dd*.csv
+- transit-gw-name_connection_connection-name_pending_cidr_list_date_yyyy-mm-dd.csv
   The purpose of the file is to keep a list of all pending CIDRs.
-- *transit-gw-name*__connection_*connection-name*__total_approved_cidr_date_*yyyy-mm-dd*.csv
+- transit-gw-name_connection_connection-name_total_approved_cidr_date_yyyy-mm-dd.csv
   The purpose of the file is to keep the total number of approved CIDRs.
-- *transit-gw-name*__connection_*connection-name*__total_pending_cidr_date_*yyyy-mm-dd*.csv
+- transit-gw-name_connection_connection-name_total_pending_cidr_date_yyyy-mm-dd.csv
   The purpose of the file is to keep the total number of approved CIDRs.
 By default, script generates and keeps these files in "/files/" folder.
 ## Requirements
