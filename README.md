@@ -23,7 +23,7 @@ The script can be scheduled to be run every day. During the script execution the
   The purpose of the file is to keep the total number of approved CIDRs.
 By default, script generates and keeps these files in "/files/" folder.
 ## Requirements
-Please keep in mind that scrip only works for **Aviatrix Transit Gateways** that have "BGP Route Approval" feature enabled in **Connection-Mode**.
+Please keep in mind that script only works for **Aviatrix Transit Gateways** that have "BGP Route Approval" feature enabled in **Connection-Mode**.
 
 The script uses .env file for keeping the information required to log in to the Aviatrix Controller and to send the email notifications.
 The following variables must be updated by you before executing the script.
