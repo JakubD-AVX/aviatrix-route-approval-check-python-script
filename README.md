@@ -21,6 +21,7 @@ The script can be scheduled to be run every day. During the script execution the
   The purpose of the file is to keep the total number of approved CIDRs.
 - transit-gw-name_connection_connection-name_total_pending_cidr_date_yyyy-mm-dd.csv
   The purpose of the file is to keep the total number of approved CIDRs.
+<br />
 By default, script generates and keeps these files in "/files/" folder.
 ## Requirements
 Please keep in mind that script only works for **Aviatrix Transit Gateways** that have "BGP Route Approval" feature enabled in **Connection-Mode**.
