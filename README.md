@@ -56,7 +56,7 @@ The script generates the outputs that show the following pieces of information:
 - name of each connection
 - for each connection: number of approved CIDRs for today and yesterday
 - for each connection: number of pending CIDRs for today and yesterday
-<br />
+
 In case the number of CIDRs (either approved or pending) between today and yesterday is not equal -> script sends a notification e-mail(s).
 ### Executing the script for the first time
 Once the script is executed for the first time you do not have any files generated a day before.
