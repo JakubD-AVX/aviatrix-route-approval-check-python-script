@@ -158,7 +158,17 @@ The Transit Gateway 'transit-1234' is not present / does not exist.
 ```
 ### E-mail notifications
 In case the number of CIDRs (either approved or pending) between today and yesterday is not equal -> script sends a notification e-mail(s).
-Example of the e-mail message (e-mail title: Aviatrix - Route Approval - Pending CIDRs changed notification):
+Example of the e-mail notification for approved CIDRs (e-mail title: Aviatrix - Route Approval - Approved CIDRs changed notification):
+```
+Total number of approved CIDRs changed for gateway: transit-90 and connection: tr90-tr70.
+
+Total number of approved CIDRs today: 3.
+Total number of approved CIDRs yesterday: 1.
+
+Please check the files for appropriate dates and compare the differences.
+
+```
+Example of the e-mail notification for pending CIDRs (e-mail title: Aviatrix - Route Approval - Pending CIDRs changed notification):
 ```
 Total number of pending CIDRs changed for gateway: transit-90 and connection: t90-t80.
 
