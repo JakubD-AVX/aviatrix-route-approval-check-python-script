@@ -12,7 +12,7 @@ The knowledge about whether those lists changed could be crucial if someone want
 - there are new pending CIDRs advertised from BGP Peer, 
 - some pending CIDRs have been removed.
 
-The script can be scheduled to be run every day. During the script execution the following files are created for each BGP connection:
+The script can be scheduled to be run every day. During the script execution the following 4 files are created for each BGP connection:
 - transit-gw-name_connection_connection-name_approved_cidr_list_date_yyyy-mm-dd.csv
   The purpose of the file is to keep a list of all approved CIDRs.
 - transit-gw-name_connection_connection-name_pending_cidr_list_date_yyyy-mm-dd.csv
