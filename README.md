@@ -148,8 +148,8 @@ The number of pending CIDRs in the CSV file for YESTERDAY: 2
 Total pending CIDR number is lower than yesterday for connection:  tr90-tr70
 Email sent successfully!
 ```
-### Executing the script for not existing Transit Gateway
-Example of the output of executing the script for the non-existing Transit Gateway:
+### Executing the script for non-existent Transit Gateway
+Example of the output of executing the script for the non-existent Transit Gateway:
 ```
 $ python3 route_approval_check.py  transit-1234
 ------------------------------------------------------------------------------------------------------------------------
