@@ -36,10 +36,13 @@ CONTROLLER_PASSWORD = "your-Aviatrix-Controller-Username-Password"
 
 SENDER_EMAIL = "your-sender-email-address"
 EMAIL_PASSWORD = "your-email-application-password"
-RECEIVER_EMAIL = "your-receiver-email-address"```
+RECEIVER_EMAIL = "your-receiver-email-address"
+```
 
 ## Usage Example
 Please be ware that you must pass the name of the Aviatrix Transit Gateway when executing the script.
 Example:
-```python3 route_approval_check.py  *transit-70*```
+```
+python3 route_approval_check.py  *transit-70*
+```
 The transit-70 is a name of my Transit Gateway.
