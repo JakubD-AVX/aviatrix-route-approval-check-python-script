@@ -45,7 +45,7 @@ RECEIVER_EMAIL = "your-receiver-email-address"
 Please be ware that you must pass the name of the Aviatrix Transit Gateway when executing the script.
 Example:
 ```
-python3 route_approval_check.py transit-70
+$ python3 route_approval_check.py transit-70
 ```
 The *transit-70* is a name of my Transit Gateway.
 
@@ -64,7 +64,7 @@ However, the script will still generate the files for today.
 ### Executing the script
 Example of the output of executing the script for the existing Transit Gateway:
 ```
-python3 route_approval_check.py  transit-90
+$ python3 route_approval_check.py  transit-90
 ------------------------------------------------------------------------------------------------------------------------
 The Transit Gateway 'transit-90' is present / exists.
 ------------------------------------------------------------------------------------------------------------------------
@@ -132,7 +132,7 @@ Email sent successfully!
 ### Executing the script for not existing Transit Gateway
 Example of the output of executing the script for the non-existing Transit Gateway:
 ```
-python3 route_approval_check.py  transit-1234
+$ python3 route_approval_check.py  transit-1234
 ------------------------------------------------------------------------------------------------------------------------
 The Transit Gateway 'transit-1234' is not present / does not exist.
 ------------------------------------------------------------------------------------------------------------------------
