@@ -31,8 +31,8 @@ controller_password = os.getenv('CONTROLLER_PASSWORD')
 api_url = f"https://{controller_ip}/v1/api"
 
 # Email configuration
-smtp_server = 'smtp.gmail.com'
-smtp_port = 587
+smtp_server = os.getenv('SMTP_SERVER')
+smtp_port = os.getenv('SMTP_PORT')
 sender_email = os.getenv('SENDER_EMAIL')
 receiver_email = os.getenv('RECEIVER_EMAIL')
 password = os.getenv('EMAIL_PASSWORD')
