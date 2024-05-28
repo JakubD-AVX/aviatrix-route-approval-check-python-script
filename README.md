@@ -5,7 +5,7 @@ The Route Approval feature maintains two lists of CIDRs: "Approved CIDR" list an
 - "Pending CIDR" list is a list of CIDRs that remote BGP Peer advertises to us but we do not have them installed/accepted on Aviatrix Gateway yet,
 - "Approved CIDR" list is a list of CIDRs that remote BGP Peer advertises to us nad we have accepted/installed on Aviatrix Gateway.
 
-The purpose of the script is to validate whether the "Approved CIDR" list and the "Pending CIDR" list changed between today and tomorrow. 
+The purpose of the script is to validate whether the "Approved CIDR" list and the "Pending CIDR" list changed between today and yesterday. 
 The knowledge about whether those lists changed could be crucial if someone wants to monitor whether: 
 - there are new CIDRs that have been approved, 
 - there are some previously approved CIDRs that have been removed, 
