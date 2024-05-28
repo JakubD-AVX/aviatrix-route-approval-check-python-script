@@ -23,6 +23,10 @@ The script can be scheduled to be run every day. During the script execution the
   The purpose of the file is to keep the total number of approved CIDRs.
 
 By default, script generates and keeps these files in "/files/" folder.
+
+![image](https://github.com/JakubD-AVX/aviatrix-route-approval-check-python-script/assets/98452952/ff0ebe19-1679-4ab8-8a55-3a5758f70cf3)
+
+
 ## Requirements
 Please keep in mind that script only works for **Aviatrix Transit Gateways** that have "BGP Route Approval" feature enabled in **Connection-Mode**.
 The script uses .env file for keeping the information required to log in to the Aviatrix Controller and to send the email notifications.
