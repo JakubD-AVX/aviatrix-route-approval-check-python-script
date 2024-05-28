@@ -1,4 +1,4 @@
-# Route Approval Check script ("yesterday vs today")
+# Route Approval Check script - version 1 ("yesterday vs today")
 ## Introduction
 There is an Aviatrix feature called "BGP Route Approval" that could be enabled on Aviatrix Gateways ([Aviatrix Docs - BGP Route Approval](https://docs.aviatrix.com/documentation/latest/building-your-network/transit-bgp-route-approval.html?expand=true)).
 The Route Approval feature maintains two lists of CIDRs: "Approved CIDR" list and "Pending CIDR" list:
