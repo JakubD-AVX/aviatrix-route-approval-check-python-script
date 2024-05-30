@@ -5,6 +5,11 @@ The Route Approval feature maintains two lists of CIDRs: "Approved CIDR" list an
 - "Pending CIDR" list is a list of CIDRs that remote BGP Peer advertises to us but we do not have them installed/accepted on Aviatrix Gateway yet,
 - "Approved CIDR" list is a list of CIDRs that remote BGP Peer advertises to us nad we have accepted/installed on Aviatrix Gateway.
 
+The Route Approval feature could operate in two Modes (it must be set up per Gateway):
+- "Gateway Mode", in this mode "Approved CIDR" and "Pending CIDR" lists are maintaned for all connections established by Gateway,
+- "Connection Mode", in this mode "Approved CIDR" and "Pending CIDR" lists are maintened separately for each connection established by Gateway.
+Please notice that this script (v1) supports only "Connection Mode".
+
 The purpose of the script is to validate whether the "Approved CIDR" list and the "Pending CIDR" list changed between today and yesterday. 
 The knowledge about whether those lists changed could be crucial if someone wants to monitor whether: 
 - there are new CIDRs that have been approved, 
