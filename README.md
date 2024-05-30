@@ -26,7 +26,8 @@ By default, script generates and keeps these files in "/files/" folder.
 
 ![image](https://github.com/JakubD-AVX/aviatrix-route-approval-check-python-script/assets/98452952/ff0ebe19-1679-4ab8-8a55-3a5758f70cf3)
 
-There is also version 2 of the script: [Link to version 2](https://github.com/JakubD-AVX/aviatrix-route-approval-check-python-script-v2/)
+The version 1 of the script works only with "Connection Mode" Route Approval feature.
+There is also version 2 of the script ("Connection Mode" and "Gateway Mode") of Route Approval feature only: [Link to version 2](https://github.com/JakubD-AVX/aviatrix-route-approval-check-python-script-v2/)
 
 ## Requirements
 Please keep in mind that script only works for **Aviatrix Transit Gateways** that have "BGP Route Approval" feature enabled in **Connection-Mode**.
